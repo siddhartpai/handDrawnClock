@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Exploring Canvas</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body ng-app="myApp">
+    <canvas id="myCanvas" width="600" height="600"></canvas>
+    <div class="gallery" ng-controller="galleryController">
+      {{abc}}
+      <div class=thumbnails ng-repeat="image in gallery">
+        <img src="{{image.src}}", style="width:60;height:60;">
+      </div>
+    </div>
+    <button class="drawBtn" onclick="drawCircle()">Draw Circle</button>
+    <script type="text/javascript" src="js/vendor.js"></script>
+    <script type="text/javascript" src="js/libs.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/draw.js"></script>
+
+  </body>
+</html>
